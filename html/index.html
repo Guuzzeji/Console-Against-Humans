@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"
+        integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="icon" href="./img/source.gif">
+    <title>Console Against Humans</title>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        html {
+            font-family: 'Arial';
+            font-size: 14px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+            border-width: 0.1px;
+            padding: 2px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding: 10px;">
+        <img src="./img/source.gif" width="100" height="100" alt="error">
+        <span style="font-size: 17.5px; font-family: monospace;"><b>Console Against Humans</b> (Web-Console Based Online
+            Game)</span>
+        <p>Press [f12] to open the console and read chat</p>
+        <label id="socket_id">Socket ID: ------</label><br><br>
+
+        <input type="text" id="Username" placeholder="Username..." autocomplete="off">
+        <button id="name_btn">Set Name</button>
+
+        <br><br><br>
+        <label><b>How to Play</b></label>
+        <p>Goal of the game is to create the most funniest answer to a prompt</p>
+        <p><b>Note:</b> Game works kind of better if everyone is in a call using something like discord. Also put
+            quotation marks (ex: ' ' or " ") around any text input and try to keep your answers short and to the point.
+        </p>
+        <ul>
+            <li>
+                <p><b>clear()</b>, clear console for you</p>
+            </li>
+            <li>
+                <p><b>msg(' text input ')</b>, send a normal message to chat</p>
+            </li>
+            <li>
+                <p><b>win(' socket id of player you picked (text input) ')</b>, if you are the text-reader then you use
+                    win() to pick
+                    the best answer to a prompt</p>
+            </li>
+            <li>
+                <p><b>answer(' text input ')</b>, if you are NOT the text-reader use this function. Note: if the prompt
+                    has more then one answer, please label your answer using numbers, ex: (1) example text (2) example
+                    text </p>
+            </li>
+            <li>
+                <p><b>score()</b>, gives you back the score of each player</p>
+            </li>
+            <li>
+                <p><b>list_player()</b>, gives you a list of all the players who have joined the game</p>
+            </li>
+            <li>
+                <p><b>ideas()</b>, if you can't think of any ideas for an answer</p>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <span>Created by <a href="https://www.reddit.com/user/guuzzeji" target="_blank">reddit@Guuzzeji</a> or <a
+                href="https://discordapp.com/users/2245/" target="_blank">discord@Guuzzeji#2245</a></span> /
+        <a href="https://github.com/Guuzzeji">Github</a><br>
+
+    </div>
+</body>
+
+</html>

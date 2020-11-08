@@ -1,0 +1,5 @@
+Better socket.io import [USE THIS ONE]:
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
+
+If import doesn't above use this:
+    <script src="./lib/socket.io.js"></script>
