@@ -1,5 +1,5 @@
 {
-  "name": "keyboard_against_humans",
+  "name": "console-against-humans",
   "version": "1.0.0",
   "description": "Web-Console based online game, play for fun and laughs",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "Guuzzeji",
+  "author": "guuzzeji",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
